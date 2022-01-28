@@ -5,3 +5,6 @@ where 26 is the number of the english alphabet
 
 # ROT_13
 a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet
+
+# Atbash cipher 
+The Atbash cipher is a particular type of monoalphabetic cipher formed by taking the alphabet (or abjad, syllabary, etc.) and mapping it to its reverse, so that the first letter becomes the last letter, the second letter becomes the second to last letter, and so on
