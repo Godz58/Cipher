@@ -8,3 +8,7 @@ a simple letter substitution cipher that replaces a letter with the 13th letter 
 
 # Atbash cipher 
 The Atbash cipher is a particular type of monoalphabetic cipher formed by taking the alphabet (or abjad, syllabary, etc.) and mapping it to its reverse, so that the first letter becomes the last letter, the second letter becomes the second to last letter, and so on
+
+# XOR cipher
+(XOR) operation. With this logic, a string of text can be encrypted by applying the bitwise XOR operator to every character using a given key
+the output is in hexadecimal
