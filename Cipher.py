@@ -6,7 +6,8 @@ while(True):
     print("4) to encipher in Vigenere cipher)")
     oper = int(input())
     if oper == 1:
-        print("enter your messege ")
+        if oper == 1:
+            print("enter your messege ")
             msg = input()
             rot_num = int(input("ROT number?: "))
             operation = input("encrypt or decrypt?: ")
@@ -74,30 +75,17 @@ while(True):
             encrypted = []
             encipherd = ['0x']
             for ct in range(len(plain_text)):
-                if plain_text[ct] == " ":
-                    print(" ", end="")
-                    continue
-                else:
-                    encrypted.append(ord(plain_text[ct]) ^ ord(key[ck]))
-                    ck += 1
-                    enc_splited = hex(encrypted[ct]).split("0x")
-                    encipherd.append(enc_splited[1])
-                    if len(plain_text) - 1 > ct:
-                        encipherd.append("-")
+                encrypted.append(ord(plain_text[ct]) ^ ord(key[ck]))
+                ck += 1
+                enc_splited = hex(encrypted[ct]).split("0x")
+                encipherd.append(enc_splited[1])
+                if len(plain_text) - 1 > ct:
+                    encipherd.append("-")
             for q in range(len(encipherd)):
                 print(encipherd[q], end="")
 
-
-        j = 0
-        for i in range(len(plain_text)):
-            if plain_text[i] == " ":
-                continue
-            else:
-                j = j + 1
-        ind = 0
-        while (j > len(key)):  # key's length equal the plain_text's length
-            key = key + key[ind]
-            ind = ind + 1
+        for i in range(len(plain_text)):  # key's length equal the plain_text's length
+            key = key + key[i]
         encrypt(plain_text, key)
         break
 
